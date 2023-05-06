@@ -1,3 +1,24 @@
+## Explanation of the code:
+This code is an implementation of a binary min-heap using an array. A binary heap is a complete binary tree where the parent node is always smaller than its children nodes.
+
+The code defines a struct Heap that has three fields:
+
+arr - An array to store the heap.
+size - The total size of the array.
+usize - The number of elements currently stored in the heap.
+The program takes user input to create the heap array and allows the user to perform two operations:
+
+Insert an element in the heap
+Perform Heap Sort on the heap and display the sorted elements.
+The program starts by dynamically allocating memory for the heap using the malloc() function.
+
+* The Insertion() function is used to insert elements into the heap. It first checks whether the heap is already full or not. If the heap is not full, the element is added to the next empty index and the TDHeapify() function is called to maintain the min-heap property.
+* The TDHeapify() function is a top-down heapify approach. It starts at the second index and checks if the parent is smaller than the current index. If not, it swaps the parent and the current index and continues the process till it reaches the root.
+* The HeapSort() function is used to sort the heap in ascending order. It repeatedly extracts the smallest element from the heap (which is always the root) and moves it to the end of the heap array. It then reduces the size of the heap by one and calls the TDHeapify() function to maintain the min-heap property.
+* The main function takes user input to create the heap and allows the user to choose between the two operations mentioned above. If the user chooses the heap sort operation, the sorted elements are displayed using the Display() function.
+* Overall, this code implements the binary min-heap using an array and provides the user with the ability to perform insertion and heap sort operations on the heap.
+## Code:
+```c
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -141,3 +162,4 @@ int main()
     
     return 0;
 }
+```
