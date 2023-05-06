@@ -138,4 +138,6 @@ int main()
             printf("Invalid choice!\n");
         }
     } while (flag != 1);
+    
+    return 0;
 }
