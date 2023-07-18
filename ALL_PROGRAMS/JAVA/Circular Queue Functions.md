@@ -1,3 +1,12 @@
+## Explanation
+
+## Time and Space Complexity:
+### `Time Complexity`:
+
+### `Space Complexity`:
+
+## Code:
+```java
 import java.util.*;
 class Queue{
     int rear;
@@ -131,3 +140,4 @@ public class QueueFunctions{
 
     }
 }
+```
