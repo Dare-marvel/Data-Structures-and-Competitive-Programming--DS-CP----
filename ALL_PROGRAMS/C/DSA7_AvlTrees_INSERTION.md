@@ -1,3 +1,12 @@
+## Explanation
+
+## Time and Space Complexity:
+### `Time Complexity`:
+
+### `Space Complexity`:
+
+## Code:
+```c
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -181,4 +190,7 @@ int main()
     } while (flag != 1);
 
     return 0;
+    ````
+
+    
 }
